@@ -13,13 +13,5 @@ class HomeController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-    
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tableView.deselectRow(at: indexPath, animated: true)
-        
-        let cell = tableView.cellForRow(at: indexPath)
-        if let text = cell?.textLabel?.text {
-            print("你点击了 " + text)
-        }
-    }
 }
+
